@@ -1,0 +1,24 @@
+Quick start instructions for the ActionsHUD
+==========================================
+
+If you are eager to get started with this system but don't know where to begin, here is
+a quick overview of how to get started...
+
+Step 1. Create a UGUI Canvas in your scene if you don't already have one. 
+Step 2. Drag ActionsHUDCompleteSample onto the canvas
+Step 3. Drop a ActionsHUDObjectOfInterest prefab on every object in your scene that you want to interact with.
+        Make sure to complete the Actions field in the Inspector by setting a value of at least 1 and
+        picking a value from the drop down list
+Step 4. Drop the ActionsHUDPlayerObject prefab on your player character
+Step 5. The objects you can interact with will each receive one or more of the following 4 messages depending
+        on what you specified for that object in step 3: Inspect, InteractWith, StartDialogue and Collect
+        You need to create one or more scripts to place on the objects you picked in step 3 so that they have
+        one (and only one) function that corresponds to the actions you chose for it.
+        
+And that is all there is to it. Step 5 might sound like a bit of a bummer but have a look at the demo scene
+and you will see that some objects can easily share the same script while others that have more specific
+behavior can have their own, custom scripts. 
+
+There you have it... the 5 steps to using the ActionsHUD.
+
+Enjoy
